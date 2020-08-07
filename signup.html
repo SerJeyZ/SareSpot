@@ -14,7 +14,7 @@
     </head>
     <body>
         <div class="auth">
-            <div class="auth-container">
+            <div class="auth-container auth-container__registration">
                 <div class="card">
                     <header class="auth-header">
                         <h1 class="auth-title">
@@ -31,7 +31,11 @@
                         <p class="text-center fz30">Регистрация</p>
                         <form id="signup-form" action="/index.html" method="GET" novalidate="">
                             <div class="form-group">
-                                <label for="email">Email</label>
+                                <label for="login">Логин</label>
+                                <input type="text" class="form-control underlined" name="login" id="login" placeholder="Введите ваш логин" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Эл. почта</label>
                                 <input type="email" class="form-control underlined" name="email" id="email" placeholder="Введите ваш email" required="">
                             </div>
                             <div class="form-group">
@@ -44,6 +48,22 @@
                                         <input type="password" class="form-control underlined" name="retype_password" id="retype_password" placeholder="Повторите пароль" required="">
                                     </div>
                                 </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="user-name">Имя</label>
+                                <input type="text" class="form-control underlined" name="user-name" id="user-name" placeholder="Введите ваш имя" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="user-second-name">Отчество</label>
+                                <input type="text" class="form-control underlined" name="user-second-name" id="user-second-name" placeholder="Введите ваш отчество" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="user-last-name">Фамилия</label>
+                                <input type="text" class="form-control underlined" name="user-last-name" id="user-last-name" placeholder="Введите вашу фамилию" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="user-phone">Телефон</label>
+                                <input type="tel" class="form-control underlined" name="user-phone" id="user-phone" placeholder="Введите ваш телефон" required="">
                             </div>
                             <div class="form-group">
                                 <label for="agree">
