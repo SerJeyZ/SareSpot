@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title> ShareSpot.Tracker </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/vendor.css">
+        <link rel="stylesheet" href="css/app-orange.css">
+        <!-- Theme initialization -->
+    </head>
+    <body>
+        <div class="container">
+            <div class="company">
+                <p class="text-center fz30 company__title">Регистрация компании</p>
+                <form id="company-form" action="/index.html" method="GET" novalidate="">
+                    <div class="form-group">
+                        <label for="company-min-name">Сокращённое наименование организации</label>
+                        <input type="text" class="form-control" name="company-min-name" id="company-min-name" placeholder="Сокращённое наименование компании">
+                    </div>
+                    <div class="form-group">
+                        <label for="company-full-name">Полное наименование организации</label>
+                        <input type="text" class="form-control" name="company-full-name" id="company-full-name" placeholder="Полное наименование организации" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="adress">Адрес</label>
+                        <input type="text" class="form-control" name="company-adress" id="adress" placeholder="Москва, пр. Сахарова, д.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="site">Сайт компании</label>
+                        <input type="text" class="form-control" name="company-site" id="site" placeholder="http://example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Эл. почта</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="http://example.com" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" class="form-control" name="user-phone" id="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8-234-567-89-19" required="">
+                    </div>
+                    <div class="form-group company__btn-group">
+                        <button type="submit" class="btn btn-block btn-primary bth-lg company__btn">Регистрация</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Reference block for JS -->
+        <script src="js/vendor.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
