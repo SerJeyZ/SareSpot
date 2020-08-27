@@ -186,15 +186,22 @@
                         </div>
                         <div class="row sameheight-container justify-content-center">
                             <div class="task-wrap fade col-800">
-                                <div class="task" id="active-task">
-                                    <div class="task-col1"><em class="fa fa-plus-square"></em></div>
-                                    <div class="task-col2"><span class="task__project-key">TTR-22</span><span class="task__project-name">Project-4</span></div>
-                                    <div class="task-col3">
-                                        <p class="task-card__project-title">Внесение правок</p>
+                                <div class="row task" id="active-task">
+                                    <div class="col-1 task-col1"><em class="fa fa-plus-square"></em></div>
+                                    <div class="col-10 task-col2">
+                                        <div class="row task-row1">
+                                            <span class="col-8 task__project-key">Очень длинное название задачи, ну прям длиннее некуда</span>
+                                            <span class="col-4 task__project-name">Название проекта, тоже длинное</span>
+                                        </div>
+                                        <div class="row task-row2">
+                                            <p class="col-12 task-card__project-title">Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты.</p>
+                                        </div>
                                     </div>
-                                    <button class="task__close-btn">
-                                        <em class="fa fa-times"></em>
-                                    </button>
+                                    <div class="col1">
+                                        <button class="task__close-btn">
+                                            <em class="fa fa-times"></em>
+                                        </button>
+                                    </div>
                                 </div>
                                 <textarea class="task__textarea" name="task-discr" id="task-discr" cols="30" rows="3" placeholder="Добавить описание"></textarea>
                             </div>
@@ -208,27 +215,42 @@
                                             <li class="dropdown-search__menu-item"><a class="dropdown-search__menu-link" href="#">
                                                     <div class="task task-small">
                                                         <div class="task-col1"><em class="fa fa-plus-square"></em></div>
-                                                        <div class="task-col2"><span class="task__project-key">TTR-22</span><span class="task__project-name">Project-4</span></div>
-                                                        <div class="task-col3">
-                                                            <p class="task-card__project-title">Внесение правок</p>
+                                                        <div class="task-col2">
+                                                            <div class="row task-row1">
+                                                                <span class="col-8 task__project-key">TTR-22</span>
+                                                                <span class="col-4 task__project-name">Project-4</span>
+                                                            </div>
+                                                            <div class="row task-row2">
+                                                                <p class="col-12 task-card__project-title">Внесение правок</p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </a></li>
                                             <li class="dropdown-search__menu-item"><a class="dropdown-search__menu-link" href="#">
                                                     <div class="task task-small">
                                                         <div class="task-col1"><em class="fa fa-plus-square"></em></div>
-                                                        <div class="task-col2"><span class="task__project-key">TTR-22</span><span class="task__project-name">Project-4</span></div>
-                                                        <div class="task-col3">
-                                                            <p class="task-card__project-title">Внесение правок Внесение правок Внесение правок Внесение правок Внесение правок Внесение правок</p>
+                                                        <div class="task-col2">
+                                                            <div class="row task-row1">
+                                                                <span class="col-8 task__project-key">Очень длинное название задачи, ну прям длиннее некуда</span>
+                                                                <span class="col-4 task__project-name">Название проекта, тоже длинное</span>
+                                                            </div>
+                                                            <div class="row task-row2">
+                                                                <p class="col-12 task-card__project-title">Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты.</p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </a></li>
                                             <li class="dropdown-search__menu-item"><a class="dropdown-search__menu-link" href="#">
                                                     <div class="task task-small">
                                                         <div class="task-col1"><em class="fa fa-plus-square"></em></div>
-                                                        <div class="task-col2"><span class="task__project-key">TTR-22</span><span class="task__project-name">Project-4</span></div>
-                                                        <div class="task-col3">
-                                                            <p class="task-card__project-title">Внесение правок</p>
+                                                        <div class="task-col2">
+                                                            <div class="row task-row1">
+                                                                <span class="col-8 task__project-key">TTR-22</span>
+                                                                <span class="col-4 task__project-name">Project-4</span>
+                                                            </div>
+                                                            <div class="row task-row2">
+                                                                <p class="col-12 task-card__project-title">Внесение правок</p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </a></li>
@@ -272,67 +294,50 @@
                         </div>
                     </section>
                 </article>
-                <div class="modal fade" id="modal-media">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Media Library</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    <span class="sr-only">Close</span>
-                                </button>
-                            </div>
-                            <div class="modal-body modal-tab-container">
-                                <ul class="nav nav-tabs modal-tabs" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#gallery" data-toggle="tab" role="tab">Gallery</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="#upload" data-toggle="tab" role="tab">Upload</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content modal-tab-content">
-                                    <div class="tab-pane fade" id="gallery" role="tabpanel">
-                                        <div class="images-container">
-                                            <div class="row">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade active in" id="upload" role="tabpanel">
-                                        <div class="upload-container">
-                                            <div id="dropzone">
-                                                <form action="/" method="POST" enctype="multipart/form-data" class="dropzone needsclick dz-clickable" id="demo-upload">
-                                                    <div class="dz-message-block">
-                                                        <div class="dz-message needsclick"> Drop files here or click to upload. </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Insert Selected</button>
-                            </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
-                <div class="modal fade" id="confirm-modal">
+                <div class="modal fade" id="calendar-task-modal">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title"><i class="fa fa-warning"></i> Alert</h4>
+                                <h4 class="modal-title"><em class="fa fa-bars"></em> Информация о задаче</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                    <em class="fa fa-times"></em>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <p>Are you sure want to do this?</p>
+                                <div class="info-block">
+                                    <div class="info-block__date"> 10.08.2020 </div>
+                                    <div class="info-block__start-time">
+                                        <span class="text-bold">Начало работы :</span>
+                                        <span class="text-normal">10:00</span>
+                                    </div>
+                                    <div class="info-block__stop-time">
+                                        <span class="text-bold">Окончание работы :</span>
+                                        <span class="text-normal">19:00</span>
+                                    </div>
+                                    <p class="info-block__descr"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod earum atque nihil labore inventore adipisci ipsam dignissimos, aliquid et dolorum eaque similique veniam hic a commodi velit est ipsum magnam. </p>
+                                    <div class="info-block__btn-block">
+                                        <button type="button" class="btn btn-primary" id="edit-task" data-dismiss="modal">Редактировать</button>
+                                    </div>
+                                </div>
+                                <form class="d-none" id="editTasklogForm" action="#" method="POST">
+                                    <div class="form-row">
+                                        <div class="form-group col-6">
+                                            <label for="start-task">Начало работы</label>
+                                            <input type="text" id="start-task" class="date-range date-range--100" name="start-task" value="01/01/2020  12:00">
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <label for="stop-task">Окончание работы</label>
+                                            <input type="text" id="stop-task" class="date-range date-range--100" name="stop-task" value="01/01/2020  15:00">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="task-descr" name="task-descr" id="task-descr" cols="20" rows="5" placeholder="Описание"></textarea>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                            <div class="modal-footer d-none">
+                                <button type="button" class="btn btn-primary" id="save-edit" data-dismiss="modal">Сохранить</button>
+                                <button type="button" class="btn btn-secondary" id="cancel-edit" data-dismiss="modal">Отмена</button>
                             </div>
                         </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->
